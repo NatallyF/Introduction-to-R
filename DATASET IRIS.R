@@ -1,4 +1,4 @@
-# AULA: INTRODUÇÃO AO R COM O DATASET IRIS
+# INTRODUÇÃO AO R COM O DATASET IRIS
 # Objetivo: criar objetos, explorar tabelas, selecionar dados e fazer gráficos.
 # Este script usa somente funções que já acompanham o R.
 # No RStudio, execute uma linha ou seleção com Ctrl + Enter.
@@ -180,13 +180,6 @@ plot(modelo, which = 2)
 # O modelo clássico pressupõe independência, variância residual comum
 # e normalidade dos resíduos para a inferência. iris apresenta diferenças
 # de dispersão entre espécies.
-# ANOVA de Welch permite variâncias diferentes (mantém outras suposições).
-oneway.test(Petal.Length ~ Species, data = dados, var.equal = FALSE)
-
-# Tukey compara os pares de médias sob o modelo clássico de variância comum.
-# Não é o pós-teste da ANOVA de Welch. Aqui serve para ensinar o comando;
-# sua interpretação depende da adequação do modelo clássico.
-TukeyHSD(modelo)
 
 # 10. EXERCÍCIOS ----------------------------------------------------------
 
